@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +7,81 @@
     <!-- ========== Start daysiUI and Tailwind css link ========== -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- ========== End daysiUI and Tailwind css link ========== -->
     
 </head>
 <body>
-    
+    <header class="container mx-auto mt-[50px] mulish">
+        <!-- ========== Start nav ========== -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><div class="tooltip hover:tooltip-open tooltip-top" data-tip="Home">
+                            <button class="btn rounded-full h-[56px] w-[56px] border-1 border-[#0307121A]"><i class="fa-solid fa-house text-[#12132D99] "></i></button>
+                          </div></li>
+                          <li>
+                            <!-- pen  -->
+                        <div class="tooltip hover:tooltip-open tooltip-top" data-tip="Edit">
+                            <button class="btn rounded-full h-[56px] w-[56px] border-1 border-[#0307121A]"><i class="fa-solid fa-pencil text-[#12132D99]"></i></button>
+                          </div>
+                          </li>
+                          <li><!-- user add  -->
+                            <div class="tooltip hover:tooltip-open tooltip-top" data-tip="Add">
+                                <button class="btn rounded-full h-[56px] w-[56px] border-1 border-[#0307121A]"><i class="fa-solid fa-user-plus text-[#12132D99]"></i></button>
+                              </div>
+                            </li>
+                            <li>
+                               <div class="tooltip hover:tooltip-open tooltip-top" data-tip="Profile">
+                            <button class="btn rounded-full h-[56px] w-[56px] border-1 border-[#0307121A]"><i class="fa-regular fa-flag text-[#12132D99]"></i></button>
+                          </div> 
+                            </li>
+                    </ul>
+                  </div>
+              <a class="btn btn-ghost text-4xl text-[#12132D] font-black">ReTro</a>
+            </div>
+            <!-- ========== Start fdfdfdfdf ========== -->
+            <div class="navbar-end hidden lg:flex">
+                
+              </div>
+            <!-- ========== End fdfdfdfdf ========== -->
+            
+            <div class="navbar-end  space-x-6">
+                
+              <div class="hidden lg:flex ">
+                <ul class="flex gap-3 px-1">
+                    <li><div class="tooltip hover:tooltip-open tooltip-top" data-tip="Home">
+                      <button class="btn rounded-full h-[56px] w-[56px] border-1 border-[#0307121A]"><i class="fa-solid fa-house text-[#12132D99] "></i></button>
+                    </div></li>
+                    <li>
+                      <!-- pen  -->
+                  <div class="tooltip hover:tooltip-open tooltip-top" data-tip="Edit">
+                      <button class="btn rounded-full h-[56px] w-[56px] border-1 border-[#0307121A]"><i class="fa-solid fa-pencil text-[#12132D99]"></i></button>
+                    </div>
+                    </li>
+                    <li><!-- user add  -->
+                      <div class="tooltip hover:tooltip-open tooltip-top" data-tip="Add">
+                          <button class="btn rounded-full h-[56px] w-[56px] border-1 border-[#0307121A]"><i class="fa-solid fa-user-plus text-[#12132D99]"></i></button>
+                        </div>
+                      </li>
+                      <li>
+                         <div class="tooltip hover:tooltip-open tooltip-top" data-tip="Profile">
+                      <button class="btn rounded-full h-[56px] w-[56px] border-1 border-[#0307121A]"><i class="fa-regular fa-flag text-[#12132D99]"></i></button>
+                    </div> 
+                      </li>
+                  </ul>
+              </div>
+              <a class="btn h-[56px] bg-[#797DFC] lg:w-[146px] rounded-[50px] text-[#FFF] font-bold text-xl">Sign In</a>
+            </div>
+          </div>
+          
+        <!-- ========== End nav ========== -->
+        
+    </header>
+    <script src="./js/retro.js"></script>
 </body>
 </html>
