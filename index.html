@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReTro</title>
+    <link rel="stylesheet" href="./styles/style.css">
     <!-- ========== Start daysiUI and Tailwind css link ========== -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -83,11 +84,11 @@
         <!-- ========== Start banner part ========== -->
         <div class="hero min-h-screen bg-no-repeat mx-auto bg-[#12132D] rounded-[32px] bg-bottom bg-contain bg-[url('./images/bgbanner.png')] my-[50px] flex flex-col lg:flex-row justify-center items-center gap-[50px] p-[100px] mulish" >
            <div class="max-w-[500px] ">
-            <h1 class="text-[40px] lg:text-[64px] font-black text-white mb-[20px]">Welcome to the <span>ReTro</span> Forum</h1>
+            <h1 class="text-[40px] lg:text-[64px] font-black text-white mb-[20px]">Welcome to the <span class="w-full text-transparent bg-clip-text font-extrabold bg-gradient-to-r from-[#797DFC] to-[#797DFC22] ">ReTro</span> Forum</h1>
             <p class="text-[16px] lg:text-[20px] font-thin text-[#FFFFFFCC] opacity-[80%] mb-[32px]">Share your favorite opinion and win and wp forum coffee mug!</p>
             <label class="input input-bordered flex items-center lg:gap-2 max-w-[300px] lg:max-w-[400px] rounded-[56px] h-[56px] " >
                 <input type="text" class="grow" placeholder="Search here anything" />
-                <button class="btn lg:w-[121px] lg:h-[44px] rounded-[46px] badge badge-info text-[#FFFFFF] font-bold text-xl bg-[#797DFC]">Search</button>
+                <button class="btn lg:w-[121px] lg:h-[44px] rounded-[46px] badge badge-info text-[#FFFFFF] font-bold lg:text-xl bg-[#797DFC]">Search</button>
               </label>
            </div>
            <div class=" p-[48px] bg-white rounded-[32px] space-y-6 font-medium text-2xl text-[#12132DCC]">
@@ -113,9 +114,43 @@
         
     </header>
     <main>
+        <!-- LETS DISCUSS PART  -->
+        <section class="container mx-auto mt-[100px] mb-[50px]">
+            <div class="text-center flex flex-col justify-center items-center">
+                <h1 class="text-[#12132D] font-black text-[30px] lg:text-[40px] mb-[24px] mulish">Let’s Discuss</h1>
+            <p class="text-[#12132D99] lg:max-w-[691px] inter">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+            </div>
+        </section>
         <section class="container mx-auto">
-            <h1>Let’s Discuss</h1>
-
+            <!-- AUTHORS SECTION -->
+            <div class="bg-[#F3F3F5] hover:bg-[#797DFC1A] p-[40px] flex flex-col lg:flex-row gap-[24px] rounded-[24px] max-w-[772px]">
+                <div>
+                    <!-- Profile picture section  -->
+                    <div class="w-[72px] h-[72px] bg-[url('https://lh3.googleusercontent.com/ogw/AF2bZyggmURpajB-mOUqTFZvfyZ4nbLcZmpntdhHpCXohto=s32-c-mo')] bg-no-repeat bg-cover rounded-2xl relative">
+                        <div class="bg-[#10B981] w-[18px] h-[18px] rounded-full absolute left-[57px] bottom-[57px] border-2"> 
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-[596px]">
+                    <div class="flex gap-[20px] inter text-[#12132DCC] lg:font-medium text-sm mb-[12px]">
+                        <p># Music</p>
+                        <p>Author : Awlad Hossain</p>
+                    </div>
+                    <h1 class="mulish font-bold text-[20px] mb-[16px] text-[#12132D]">10 Kids Unaware of Their Halloween Costume</h1>
+                    <p class="inter text-base font-normal mb-[20px] text-[#12132D99]">It’s one thing to subject yourself to ha Halloween costume mishap because, hey that’s your prerogative</p>
+                    <hr class="border border-dashed mb-[20px]">
+                    <div class="flex items-center justify-between text-[#12132D99] inter font-normal">
+                        <div class="flex gap-[25px]">
+                            <p><i class="fa-regular fa-message"></i> <span>560</span></p>
+                            <p><i class="fa-regular fa-eye"></i> <span>1,568</span></p>
+                            <p><i class="fa-regular fa-clock"></i> <span>5 min</span></p>
+                        </div>
+                        <button class="btn w-[50px] h-[50px]  text-[28px] bg-green-500 rounded-full text-white"><i class="fa-solid fa-envelope-open"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div>
+            </div>
         </section>
     </main>
     <script src="./js/retro.js"></script>
