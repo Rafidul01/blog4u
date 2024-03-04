@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ReTro</title>
+    <title>Blog4U</title>
     <link rel="stylesheet" href="./styles/style.css">
     <!-- ========== Start daysiUI and Tailwind css link ========== -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -12,8 +12,8 @@
     <!-- ========== End daysiUI and Tailwind css link ========== -->
     
 </head>
-<body>
-    <header class="container mx-auto mt-[50px] mulish">
+<body >
+    <header class="container mx-auto mt-[50px] mulish lg:p-4">
         <!-- ========== Start nav ========== -->
         <div class="navbar bg-base-100">
             <div class="navbar-start">
@@ -43,7 +43,7 @@
                             </li>
                     </ul>
                   </div>
-              <a class="btn btn-ghost text-4xl text-[#12132D] font-black">ReTro</a>
+              <a class="btn btn-ghost text-4xl text-[#12132D] font-black">Blog4U</a>
             </div>
             <!-- ========== Start fdfdfdfdf ========== -->
             <div class="navbar-end hidden lg:flex">
@@ -84,11 +84,11 @@
         <!-- ========== Start banner part ========== -->
         <div class="hero min-h-screen bg-no-repeat mx-auto bg-[#12132D] rounded-[32px] bg-bottom bg-contain bg-[url('./images/bgbanner.png')] my-[50px] flex flex-col lg:flex-row justify-center items-center gap-[50px] p-[100px] mulish" >
            <div class="max-w-[500px] ">
-            <h1 class="text-[40px] lg:text-[64px] font-black text-white mb-[20px]">Welcome to the <span class="w-full text-transparent bg-clip-text font-extrabold bg-gradient-to-r from-[#797DFC] to-[#797DFC22] ">ReTro</span> Forum</h1>
-            <p class="text-[16px] lg:text-[20px] font-thin text-[#FFFFFFCC] opacity-[80%] mb-[32px]">Share your favorite opinion and win and wp forum coffee mug!</p>
+            <h1 class="text-[40px] lg:text-[64px] font-black text-white mb-[20px]">Welcome to the <span class="w-full text-transparent bg-clip-text font-extrabold bg-gradient-to-r from-[#797DFC] to-[#797DFC22] ">Blog4U</span> Forum</h1>
+            <p class="text-[16px] lg:text-[20px] font-thin text-[#FFFFFFCC] opacity-[80%] mb-[32px]">Engage in diverse discussions and share insights in Blog4U Forum.</p>
             <label class="input input-bordered flex items-center lg:gap-2 max-w-[300px] lg:max-w-[400px] rounded-[56px] h-[56px] " >
-                <input id="search-value" type="text" class="grow" placeholder="Search here anything" />
-                <button onclick="searchByCategory()" class="btn lg:w-[121px] lg:h-[44px] rounded-[46px] badge badge-info text-[#FFFFFF] font-bold lg:text-xl bg-[#797DFC]">Search</button>
+                <input id="search-value" type="text" class="grow" placeholder="Search here anything" /><a href="#discuss-section">
+                <button onclick="searchByCategory()" class="btn lg:w-[121px] lg:h-[44px] rounded-[46px] badge badge-info text-[#FFFFFF] font-bold lg:text-xl bg-[#797DFC]">Search</button></a>
               </label>
            </div>
            <div class=" p-[48px] bg-white rounded-[32px] space-y-6 font-medium text-2xl text-[#12132DCC]">
@@ -113,15 +113,15 @@
         <!-- ========== End banner part ========== -->
         
     </header>
-    <main>
+    <main class="lg:p-4">
         <!-- LETS DISCUSS PART  -->
-        <section class="container mx-auto mt-[100px] mb-[50px]">
+        <section id="discuss-section" class="container mx-auto mt-[100px] mb-[50px]">
             <div class="text-center flex flex-col justify-center items-center">
                 <h1 class="text-[#12132D] font-black text-[30px] lg:text-[40px] mb-[24px] mulish">Let’s Discuss</h1>
-            <p class="text-[#12132D99] lg:max-w-[691px] inter">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+            <p class="text-[#12132D99] lg:max-w-[691px] inter">Engage in dynamic conversations, share insights, and explore diverse topics together on Let's Discuss platform.</p>
             </div>
         </section>
-        <section id="#author-section" class="container mx-auto flex flex-col lg:flex-row gap-6 lg:gap-0 justify-between items-start">
+        <section id="author-section" class="container mx-auto flex flex-col lg:flex-row gap-6 lg:gap-0 justify-between items-start">
             <!-- AUTHORS SECTION -->
             <div id="post-container" class="space-y-6">
                 
@@ -140,10 +140,10 @@
         <section class="container mx-auto my-[100px] ">
             <div class="hero  bg-[#12132D] rounded-[32px] lg:pl-[91px] ">
                 <div class="hero-content  flex-col lg:flex-row-reverse  pt-[61px]">
-                  <img src="./images/joinforum.png" class="max-w-sm rounded-lg w-full  " />
+                  <img src="./images/joinforum.png" class="max-w-sm rounded-lg w-full" />
                   <div >
                     <h1 class="text-[32px] lg:text-[40px] font-black mulish text-white">Join Our Forum</h1>
-                    <p class="py-6 mulish text-[#FFFFFFCC] font-medium lg:text-base">Share your favorite opinion and win and wp forum coffee mug! Yes, you can run unit tests and view the results directly within the app.</p>
+                    <p class="py-6 mulish text-[#FFFFFFCC] font-medium lg:text-base">Connect, share, and engage in discussions. Join Our Forum and be part of the conversation.</p>
                     <button class="btn text-[#FFFFFFCC] bg-[#797DFC] w-[232px] rounded-[50px] border-none">Get Started</button>
                   </div>
                 </div>
@@ -153,71 +153,18 @@
         <section class="container mx-auto mt-[100px] mb-[50px]">
             <div class="text-center flex flex-col justify-center items-center">
                 <h1 class="text-[#12132D] font-black text-[30px] lg:text-[40px] mb-[24px] mulish">Latest Posts</h1>
-            <p class="text-[#12132D99] lg:max-w-[691px] inter">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+            <p class="text-[#12132D99] lg:max-w-[691px] inter">Stay updated with our Latest Posts. Explore fresh content and engage with our vibrant community.</p>
             </div>
         </section>
         <!-- *********************************latest posts card***********************  -->
-        <section id="" class="container mx-auto flex flex-col lg:flex-row justify-between items-center gap-6 lg:gap-0">
-            <!-- *************************************Card 1*************************** -->
-            <div class="card lg:w-96 bg-base-100 shadow-xl border border-[#12132D26] rounded-[24px]">
-                <figure class="px-6 pt-6">
-                  <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-start mulish">
-                    <p class="text-[#12132D99] font-normal text-base"><i class="fa-regular fa-calendar-days"></i> <span>29 January 2024</span></p>
-                  <h2 class="card-title text-[#12132D] font-extrabold text-lg">What will a mars habitat force that impact in our daily life!!!</h2>
-                  <p>Yes, you can run unit tests and view the results directly within the app. </p>
-                  <div class="card-actions flex items-center gap-4">
-                    <div class="w-[44px] h-[44px] rounded-full bg-[url('https://lh3.googleusercontent.com/ogw/AF2bZyggmURpajB-mOUqTFZvfyZ4nbLcZmpntdhHpCXohto=s32-c-mo')] bg-no-repeat bg-cover"></div>
-                    <div class="mulish">
-                        <h1 class="#12132D font-bold text-base">Cameron Williamson</h1>
-                        <p class="text-[#12132D99] text-[14px] font-normal">Unknown</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            <!-- *************************************Card 2*************************** -->
-            <div class="card lg:w-96 bg-base-100 shadow-xl border border-[#12132D26] rounded-[24px]">
-                <figure class="px-6 pt-6">
-                  <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-start mulish">
-                    <p class="text-[#12132D99] font-normal text-base"><i class="fa-regular fa-calendar-days"></i> <span>29 January 2024</span></p>
-                  <h2 class="card-title text-[#12132D] font-extrabold text-lg">What will a mars habitat force that impact in our daily life!!!</h2>
-                  <p>Yes, you can run unit tests and view the results directly within the app. </p>
-                  <div class="card-actions flex items-center gap-4">
-                    <div class="w-[44px] h-[44px] rounded-full bg-[url('https://lh3.googleusercontent.com/ogw/AF2bZyggmURpajB-mOUqTFZvfyZ4nbLcZmpntdhHpCXohto=s32-c-mo')] bg-no-repeat bg-cover"></div>
-                    <div class="mulish">
-                        <h1 class="#12132D font-bold text-base">Cameron Williamson</h1>
-                        <p class="text-[#12132D99] text-[14px] font-normal">Unknown</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            <!-- *************************************Card 3*************************** -->
-            <div class="card lg:w-96 bg-base-100 shadow-xl border border-[#12132D26] rounded-[24px]">
-                <figure class="px-6 pt-6">
-                  <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-start mulish">
-                    <p class="text-[#12132D99] font-normal text-base"><i class="fa-regular fa-calendar-days"></i> <span>29 January 2024</span></p>
-                  <h2 class="card-title text-[#12132D] font-extrabold text-lg">What will a mars habitat force that impact in our daily life!!!</h2>
-                  <p>Yes, you can run unit tests and view the results directly within the app. </p>
-                  <div class="card-actions flex items-center gap-4">
-                    <div class="w-[44px] h-[44px] rounded-full bg-[url('https://lh3.googleusercontent.com/ogw/AF2bZyggmURpajB-mOUqTFZvfyZ4nbLcZmpntdhHpCXohto=s32-c-mo')] bg-no-repeat bg-cover"></div>
-                    <div class="mulish">
-                        <h1 class="#12132D font-bold text-base">Cameron Williamson</h1>
-                        <p class="text-[#12132D99] text-[14px] font-normal">Unknown</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <section id="latest-posts-cards" class="container mx-auto flex flex-col lg:flex-row justify-between items-center gap-6 lg:gap-0">
+
         </section>
     </main>
     <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded mt-[100px]">
-        <h1 class="mulish text-[#12132D] font-extrabold text-[36px] mt-[100px]">ReTro</h1>
+        <h1 class="mulish text-[#12132D] font-extrabold text-[36px] mt-[100px]">Blog4U</h1>
         <nav class="grid grid-flow-col gap-4">
-          <p class="font-normal twxt-base text-[#12132DB2]">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</p>
+          <p class="font-normal twxt-base text-[#12132DB2]">Explore, Engage, Connect. Experience the Blog4U community. </p>
         </nav> 
         <nav>
           <div class="grid grid-flow-col gap-4 text-[24px] text-black">

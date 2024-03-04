@@ -81,3 +81,43 @@ const titleView = (id) => {
     titleContainer.appendChild(titleCards);
 
 }
+
+
+
+const latestPostsContainer = document.getElementById("latest-posts-cards");
+const getLatestPosts = async () => {
+    postContainer.innerHTML=``;
+    const result = await fetch(`https://openapi.programming-hero.com/api/retro-forum/latest-posts`);
+    const data = await result.json();
+    // const posts = data.posts;
+    // console.log(data[0]);
+    data.forEach(post => {
+        // appendPosts(post);
+        console.log(post);
+        const latestPostsCards = document.createElement('div');
+        latestPostsCards.classList=`card lg:w-96 bg-base-100 shadow-xl border border-[#12132D26] rounded-[24px]`;
+        latestPostsCards.innerHTML=`
+        <figure class="px-6 pt-6">
+            <img src="${post.cover_image}" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-start mulish">
+            <p class="text-[#12132D99] font-normal text-base"><i class="fa-regular fa-calendar-days"></i> ${post.author.posted_date || 'No publish date'}</p>
+            <h2 class="card-title text-[#12132D] font-extrabold text-lg">${post.title}</h2>
+            <p class="mulish text-[#12132D99] text-base font-normal ">${post.description}</p>
+            <div class="card-actions flex items-center gap-4">
+            <div class="w-[44px] h-[44px] rounded-full bg-[url('${post.profile_image}')] bg-no-repeat bg-cover"></div>
+            <div class="mulish">
+                <h1 class="#12132D font-bold text-base">${post.author.name}</h1>
+                <p class="text-[#12132D99] text-[14px] font-normal">${post.author.designation ||'Unknown'}</p>
+            </div>
+            </div>
+        </div>
+        `;
+        latestPostsContainer.appendChild(latestPostsCards);
+
+
+    });
+    // appendPosts(posts);
+    
+} 
+getLatestPosts();
