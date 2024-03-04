@@ -51,17 +51,34 @@ const appendPosts = (post) => {
         </div>
     </div>
     `;
-    postContainer.appendChild(postCards);
+    setTimeout(() => {
+        postContainer.appendChild(postCards);
+        loadingToggle(false);
+    },2000);
+    
 }
 
 
 const searchByCategory = () => {
     // console.log("vai guta diche");
+    loadingToggle(true);
     const inputFild = document.getElementById("search-value");
     const inputValue = inputFild.value;
     inputFild.value = '';
+    
     allPosts(inputValue);
-    console.log(inputValue);
+
+    // console.log(inputValue);
+}
+const loadingContainer=document.getElementById("loading-container");
+const loadingToggle = (flag) =>{
+    console.log("vai tui vul korchos ami achi");
+    if(flag){
+        loadingContainer.classList.remove('hidden');
+    }
+    else{
+        loadingContainer.classList.add('hidden');
+    }
 }
 const titleContainer = document.getElementById("title-container");
 const titleView = (id) => {
